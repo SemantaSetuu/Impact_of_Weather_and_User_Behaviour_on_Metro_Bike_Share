@@ -15,7 +15,7 @@ database = "DISS"
 engine = create_engine(f'postgresql://{username}:{password}@{host}:{port}/{database}')
 
 
-#For finding the answer of the question 1------------------------
+#For finding the answer of the question 1--------------------------
 # Load the table
 df = pd.read_sql("SELECT * FROM trip_with_weather", engine)
 
